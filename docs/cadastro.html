@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="min-w-[320px]" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        html, body {
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+        input[type="date"] {
+            color: #6c757d; /* Altere para a cor que você quer usar */
+        }
+
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-8 py-8 flex justify-between items-center">
+          <div class="text-2xl font-bold">
+              <a href="index.html">
+                  ddL <span class="text-teal-500">SHOES</span>
+              </a>
+              </div>
+
+          <!-- Botão do Hambúrguer -->
+          <button id="hamburger" class="block md:hidden text-3xl focus:outline-none">
+              <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Menu de navegação-->
+          <nav id="menu" class="hidden md:flex space-x-6">
+              <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+              <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+              <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+              <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+              <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+          </nav>
+
+          <!-- Links à direita -->
+          <div class="flex space-x-4">
+              <a href="#" class="text-lg text-gray-500 hover:text-teal-500 transition hidden">Entrar</a>
+              <a href="#" class="text-lg text-gray-500 hover:text-teal-500 transition">
+                  <i class="bi bi-bag"></i>
+              </a>
+          </div>
+      </div>
+
+      <!-- Menu mobile-->
+      <nav id="mobileMenu" class="md:hidden flex flex-col space-y-4 mt-4 px-8 pb-5">
+          <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+          <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+          <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+          <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+          <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+      </nav>
+  </header>
+
+    <!-- Container principal -->
+    <main class="min-h-[calc(100vh-96px)] flex items-center justify-center py-8">
+        <section class="bg-white w-full max-w-6xl mx-4">
+            <div class="container px-6 py-8 mx-auto">
+                <div class="lg:flex gap-12">
+                    <!-- Esquerda: Introdução -->
+                    <div class="lg:w-1/3 flex flex-col justify-center">
+                        <h1 class="text-gray-600 text-xl md:text-2xl font-light italic">Cadastre-se, é rápido e fácil!</h1>
+                        <h2 class="mt-4 text-3xl xl:text-4xl font-semibold text-gray-800">
+                            Crie sua conta
+                        </h2>
+                        <p class="mt-4 text-gray-500">Junte-se a nós e aproveite os melhores produtos.</p>
+                    </div>
+
+                    <!-- Direita: Formulário de Cadastro -->
+                    <div class="mt-8 lg:mt-0 lg:w-2/3">
+                        <h1 class="text-2xl pb-6 xl:text-3xl font-bold text-teal-500">Cadastre-se</h1>
+                        <form id="cadastroForm" class="w-full space-y-6">
+                            <!-- Grid de campos 2x2 -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Nome Completo -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-person text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="Nome Completo" required>
+                                </div>
+
+                                <!-- Data de Nascimento -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-calendar text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="date" class="block w-full py-3  bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" required>
+                                </div>
+
+                                <!-- Nome da Mãe -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-person text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="Nome da Mãe" required>
+                                </div>
+
+                                <!-- CPF -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-card-text text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="CPF" required>
+                                </div>
+
+                                <!-- E-mail -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-envelope text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="email" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="E-mail" required>
+                                </div>
+
+                                <!-- Telefone Celular -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-phone text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="tel" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="Telefone Celular" required>
+                                </div>
+
+                                <!-- CEP -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-geo-alt text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" id="cep" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="CEP" required>
+                                </div>
+
+                                <!-- Cidade -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-building text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" id="cidade" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="Cidade" readonly disabled required>
+                                </div>
+
+                                <!-- Bairro -->
+                                <div class="relative md:col-span-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-house-door text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" id="bairro" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" placeholder="Bairro" readonly disabled required>
+                                </div>
+                            </div>
+
+                            <!-- Grid de campos de acesso 2x2 -->
+                            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                                <!-- Login -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-person-badge text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="text" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none " required placeholder="Login">
+                                </div>
+
+                                <!-- Senha -->
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-lock text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="password" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" required placeholder="Senha">
+                                </div>
+
+                                <!-- Confirmação da Senha -->
+                                <div class="relative md:col-span-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center">
+                                        <i class="bi bi-lock text-gray-400 text-lg mx-4"></i>
+                                    </span>
+                                    <input type="password" class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none" required placeholder="Confirme sua Senha">
+                                </div>
+                            </div>
+
+                            <!-- Botões -->
+                            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 pt-4">
+                                <button type="submit" class="w-full sm:w-auto px-8 py-3 text-sm font-medium tracking-wide text-white bg-teal-500 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors duration-200">
+                                    Enviar
+                                </button>
+                                <button type="reset" class="w-full sm:w-auto px-8 py-3 text-sm font-medium tracking-wide text-teal-500 bg-white border border-teal-500 rounded-lg hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors duration-200">
+                                    Limpar Tela
+                                </button>
+                            </div>
+
+                            <!-- Link para Login -->
+                            <p class=" mt-4 text-gray-600">Já possui conta? 
+                                <a href="login.html" class="text-teal-500 hover:text-teal-700 transition font-medium">Então faça login</a>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

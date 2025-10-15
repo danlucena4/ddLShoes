@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="min-w-[320px]" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu sua senha?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        html, body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-white font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-8 py-8 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="index.html">
+                    ddL <span class="text-teal-500">SHOES</span>
+                </a>
+            </div>
+
+            <!-- Botão do Hambúrguer -->
+            <button id="hamburger" class="block md:hidden text-3xl focus:outline-none">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Menu de navegação-->
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+                <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+                <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+                <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+                <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+            </nav>
+
+            <!-- Links à direita -->
+            <div class="flex space-x-4">
+                <a href="#" class="text-lg text-gray-500 hover:text-teal-500 transition hidden">Entrar</a>
+                <a href="#" class="text-lg text-gray-500 hover:text-teal-500 transition">
+                    <i class="bi bi-bag"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu mobile-->
+        <nav id="mobileMenu" class="md:hidden flex flex-col space-y-4 mt-4 px-8 pb-5">
+            <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+            <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+            <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+            <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+            <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+        </nav>
+    </header>
+
+    <!-- Container centralizado para a seção de recuperação de senha -->
+    <main class="h-[calc(100vh-96px)] flex items-center justify-center">
+        <section class="bg-white w-full rounded-lg">
+            <div class="container px-6 py-12 lg:py-16 mx-auto">
+                <div class="lg:flex">
+                    <div class="lg:w-1/2">
+                        <!-- Texto de boas-vindas estilizado -->
+                        <h1 class="mt-10 md:mt-5 text-gray-600 text-lg md:text-2xl font-light italic">Não se preocupe!</h1>
+                        
+                        <!-- Título principal estilizado -->
+                        <h1 class="mt-4 text-xl xl:text-4xl font-semibold text-gray-800 lg:text-2xl">
+                            Recupere sua senha
+                        </h1>
+
+                        <!-- Descrição explicativa -->
+                        <p class="mt-2 text-gray-500 text-sm xl:text-base">Digite seu e-mail cadastrado e enviaremos as instruções para recuperar sua senha.</p>
+                        
+                        <div class="mt-5 space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-envelope-check text-teal-500 text-xl"></i>
+                                <p class="text-gray-600">Enviaremos um e-mail de recuperação</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-shield-lock text-teal-500 text-xl"></i>
+                                <p class="text-gray-600">Processo seguro e rápido</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-clock text-teal-500 text-xl"></i>
+                                <p class="text-gray-600">Link válido por 24 horas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-col lg:w-1/2 lg:mt-0">
+                        <h1 class="text-2xl py-5 lg:text-4xl font-bold text-teal-500">SHOES</h1>
+                        <form class="w-full lg:max-w-xl">
+                            <div class="relative flex items-center">
+                                <span class="absolute">
+                                    <i class="bi bi-envelope text-gray-400 text-lg mx-4"></i>
+                                </span>
+        
+                                <input type="email" 
+                                       class="block w-full py-3 text-gray-700 bg-white border border-gray-200 rounded-lg pl-12 pr-4 focus:border-teal-500 focus:ring-2 focus:ring-teal-100 focus:outline-none transition-colors" 
+                                       placeholder="Digite seu e-mail cadastrado">
+                            </div>
+        
+                            <div class="mt-8 flex flex-col space-y-4">
+                                <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6">
+                                    <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-teal-500 rounded-lg md:w-auto hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+                                        Enviar instruções
+                                    </button>
+                                    
+                                    <a href="login.html" class="w-full px-6 py-3 text-sm font-medium tracking-wide text-teal-500 transition-colors duration-300 transform border border-teal-500 rounded-lg md:w-auto hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 text-center">
+                                        Voltar para login
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
