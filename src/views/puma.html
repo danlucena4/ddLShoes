@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html class="min-w-[320px]" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike - ddL SHOES</title>
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-8 py-8 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">
+          <a href="index.html">
+            ddL <span class="text-teal-500">SHOES</span>
+          </a>
+        </div>
+
+        <!-- Botão do Hambúrguer -->
+        <button
+          id="hamburger"
+          class="block md:hidden text-3xl focus:outline-none"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Menu de navegação-->
+        <nav id="menu" class="hidden md:flex space-x-6">
+          <a
+            href="nike.html"
+            class="text-lg text-gray-500 hover:text-teal-600 transition"
+            >Nike</a
+          >
+          <a
+            href="puma.html"
+            class="text-lg text-teal-500 font-bold hover:text-teal-500 transition"
+            >Puma</a
+          >
+          <a
+            href="jordan.html"
+            class="text-lg text-gray-500 hover:text-teal-500 transition"
+            >Jordan</a
+          >
+          <a
+            href="new-balance.html"
+            class="text-lg text-gray-500 hover:text-teal-500 transition"
+            >New Balance</a
+          >
+          <a
+            href="adidas.html"
+            class="text-lg text-gray-500 hover:text-teal-500 transition"
+            >Adidas</a
+          >
+        </nav>
+
+        <!-- Links à direita -->
+        <div class="flex space-x-4">
+          <a
+            href="login.html"
+            class="text-lg text-gray-500 hover:text-teal-500 transition"
+            >Entrar</a
+          >
+          <a
+            href="#"
+            class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >
+            <i class="bi bi-bag"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Menu mobile-->
+      <nav
+        id="mobileMenu"
+        class="md:hidden flex flex-col space-y-4 mt-4 px-8 pb-5"
+      >
+        <a
+          href="nike.html"
+          class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >Nike</a
+        >
+        <a
+          href="puma.html"
+          class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >Puma</a
+        >
+        <a
+          href="jordan.html"
+          class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >Jordan</a
+        >
+        <a
+          href="new-balance.html"
+          class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >New Balance</a
+        >
+        <a
+          href="adidas.html"
+          class="text-lg text-gray-500 hover:text-teal-500 transition"
+          >Adidas</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-r from-gray-900 to-gray-800 px-4"
+    >
+      <!-- Background Pattern - Escondido em mobile -->
+      <div class="absolute inset-0 opacity-10 hidden sm:block">
+        <div
+          class="absolute transform rotate-45 bg-red-500/10 h-96 w-96 -top-20 -left-20"
+        ></div>
+        <div
+          class="absolute transform -rotate-45 bg-red-500/10 h-96 w-96 -bottom-20 -right-20"
+        ></div>
+      </div>
+
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-12 lg:py-20"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+        >
+          <!-- Text Content - Centralizado em mobile -->
+          <div class="text-white z-10 text-center sm:pb-0 pb-8">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+              Puma Coleção
+              <span class="text-teal-500">2024</span>
+            </h1>
+            <p
+              class="text-lg text-center sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-lg mx-auto"
+            >
+              Descubra o poder e a elegância da nova coleção Puma. Performance
+              excepcional com estilo único.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <button
+                class="bg-teal-500 text-white px-8 py-3 rounded-full hover:bg-teal-600 transition"
+              >
+                Comprar Agora
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product - Escondido em mobile -->
+          <div class="relative z-10 mt-4 sm:mt-10 lg:mt-10 hidden sm:block">
+            <div class="relative">
+              <div
+                class="absolute -inset-4 bg-teal-500/20 rounded-full blur-xl"
+              ></div>
+              <img
+                src="../assets/img/puminha.webp"
+                alt="Nike Featured"
+                class="relative bottom-10 rounded-3xl w-full max-w-md mx-auto lg:max-w-none transform hover:scale-105 transition duration-500"
+              />
+
+              <div
+                class="absolute bottom-1 left-4 right-4 bg-white/10 backdrop-blur-md rounded-xl p-4"
+              >
+                <div class="flex justify-between items-center">
+                  <div>
+                    <h3 class="text-white font-bold text-xl">
+                      Tênis Avanti VL Fenty L
+                    </h3>
+                    <p class="text-teal-400">Lançamento Exclusivo</p>
+                  </div>
+                  <div class="bg-teal-500 text-white px-4 py-2 rounded-full">
+                    R$ 899,90
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-6">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Search Container -->
+          <div class="bg-transparent p-4 sm:p-6">
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                  <!-- Search Input -->
+                  <div class="relative flex-1">
+                      <input 
+                          type="text" 
+                          placeholder="Buscar produtos Puma..." 
+                          class="w-full pl-12 pr-4 py-3 text-gray-700 bg-gray-50 rounded-xl border border-gray-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300 outline-none"
+                      >
+                      <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                          <i class="bi bi-search text-lg"></i>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Price Filter Options -->
+              <div class="mt-6 flex flex-wrap gap-2 justify-center items-center">
+                  <span class="text-sm text-gray-500">Faixa de Preço:</span>
+                  <button class="price-filter px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors" data-min="0" data-max="300">
+                      Até R$ 300
+                  </button>
+                  <button class="price-filter px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors" data-min="300" data-max="500">
+                      R$ 300 - R$ 500
+                  </button>
+                  <button class="price-filter px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors" data-min="500" data-max="800">
+                      R$ 500 - R$ 800
+                  </button>
+                  <button class="price-filter px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors" data-min="800" data-max="1200">
+                      R$ 800 - R$ 1.200
+                  </button>
+                  <button class="price-filter px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors" data-min="1200" data-max="99999">
+                      Acima de R$ 1.200
+                  </button>
+              </div>
+              
+              <!-- Popular Tags (mantenha suas tags atuais, apenas adicione a classe filter-tag) -->
+              <div class="mt-4 flex flex-wrap gap-2 justify-center items-center">
+                  <span class="text-sm text-gray-500">Popular:</span>
+                  <button class="filter-tag px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors">
+                      Corrida
+                  </button>
+                  <button class="filter-tag px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors">
+                      Casual
+                  </button>
+                  <button class="filter-tag px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors">
+                      Performance
+                  </button>
+                  <button class="filter-tag px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors">
+                      Esporte
+                  </button>
+                  <button class="filter-tag px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors">
+                      Trilha
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Products Grid Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Products Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
+        >
+          <!-- Product Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinoum.avif"
+                alt="Nike Air Max 270"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -20%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Skyrocket Lite
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Esporte</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.5)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 899,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 719,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinocinco.avif"
+                alt="Nike Air Force 1"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -10%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Carina Lux L BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Casual</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-gray-500 ml-1">(4.0)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 749,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 674,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinodez.avif"
+                alt="Nike Dunk Low"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -15%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Smash V2 BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Casual</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.7)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 649,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 552,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinodoze.avif"
+                alt="Nike ZoomX Vaporfly"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -25%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Caven 2.0 BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Corrida</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="text-gray-500 ml-1">(5.0)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 1.499,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 1.124,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinoonze.avif"
+                alt="Nike React Infinity Run"
+                class="w-full  h-75 object-cover"
+              />
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Carina BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Corrida</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.5)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span class="text-lg font-bold text-gray-900">R$ 749,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinoseis.avif"
+                alt="Nike Pegasus Trail"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -20%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma ST Runner V2 SN BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Trilha</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-gray-500 ml-1">(4.0)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden sm:inline"
+                  >R$ 899,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 719,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinodois.avif"
+                alt="Nike Air Zoom Tempo"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -30%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Scend Pro
+              </h3>
+              <div class="flex items-center justify-betwoeen mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Performance</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.5)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden sm:inline"
+                  >R$ 1.299,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 909,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinotres.avif"
+                alt="Nike Blazer Mid"
+                class="w-full  h-75 object-cover"
+              />
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma Darter Pro
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Casual</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-gray-500 ml-1">(4.3)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span class="text-lg font-bold text-gray-900">R$ 499,90</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 9 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinosete.avif"
+                alt="Nike Air Max 270 React"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -15%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+                  Puma X-Ray 2 Square BDP
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Esporte</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.5)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 849,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 722,42</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 10 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinonove.avif"
+                alt="Nike Air Zoom Pegasus 39"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -20%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+              Puma Deviate Nitro
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Corrida</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                  <span class="text-gray-500 ml-1">(4.0)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 699,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 559,92</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 11 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumamasculinooito.avif"
+                alt="Nike React Infinity Run"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -30%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+              Puma Magnify Nitro 2 
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Casual</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-half"></i>
+                  <span class="text-gray-500 ml-1">(4.6)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 999,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 699,93</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 12-->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="../assets/img/produtos/pumafemininoum.avif"
+                alt="Nike Air VaporMax Flyknit"
+                class="w-full  h-75 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-red-500 text-white text-xs sm:text-sm px-3 py-1 rounded-full"
+              >
+                -20%
+              </div>
+              <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full text-teal-500 transition-colors">
+                <i class="bi bi-heart text-lg sm:text-xl"></i>
+            </button>
+            </div>
+            <div class="p-4 sm:p-5 lg:p-6">
+              <h3
+                class="text-base sm:text-lg lg:text-xl font-bold text-gray-800 mb-2 truncate"
+              >
+              Puma ForeverRun Nitro
+              </h3>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs sm:text-sm text-teal-500 font-semibold"
+                  >Esporte</span
+                >
+                <div class="flex text-yellow-400 text-xs sm:text-sm">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                  <span class="text-gray-500 ml-1">(4.3)</span>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4"
+              >
+                <span
+                  class="text-gray-500 line-through text-sm hidden xl:inline"
+                  >R$ 1.299,90</span
+                >
+                <span class="text-lg font-bold text-gray-900">R$ 1.039,92</span>
+              </div>
+              <button
+                class="w-full bg-teal-500 text-white py-2.5 sm:py-3 rounded-xl hover:bg-teal-600 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <i class="bi bi-bag-plus"></i>
+                <span>Adicionar ao Carrinho</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Sobre -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Sobre a ddL SHOES</h3>
+          <p class="text-gray-400">
+            Sua loja online especializada em  . Oferecemos uma variedade de
+            modelos das marcas mais renomadas, garantindo qualidade, estilo e
+            conforto.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Links Úteis</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-teal-500 transition">Quem Somos</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal-500 transition"
+                >Política de Privacidade</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal-500 transition"
+                >Termos de Serviço</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal-500 transition">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contato</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="bi bi-geo-alt-fill text-teal-500 mr-2"></i>
+              Rua Exemplo, 123, São Paulo, SP
+            </li>
+            <li class="flex items-center">
+              <i class="bi bi-envelope-fill text-teal-500 mr-2"></i>
+              contato@ddlshoes.com
+            </li>
+            <li class="flex items-center">
+              <i class="bi bi-telephone-fill text-teal-500 mr-2"></i>
+              +55 (11) 1234-5678
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Redes Sociais e Copyright -->
+      <div class="mt-8 border-t border-gray-700 pt-8">
+        <div
+          class="container mx-auto px-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="flex space-x-4 mb-4 md:mb-0">
+            <a href="#" class="text-white hover:text-teal-500 transition">
+              <i class="bi bi-facebook text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-teal-500 transition">
+              <i class="bi bi-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-teal-500 transition">
+              <i class="bi bi-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-teal-500 transition">
+              <i class="bi bi-whatsapp text-2xl"></i>
+            </a>
+          </div>
+          <div class="text-gray-400 text-sm">
+            &copy; 2024 ddL SHOES. Todos os direitos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

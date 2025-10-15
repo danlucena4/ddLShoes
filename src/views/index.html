@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html class="min-w-[320px]" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOES</title>
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        #carouselMarcas {
+        transition: transform 0.05s linear;
+        will-change: transform;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+<body class="font-poppins bg-white h-full">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-8 py-8 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="index.html">
+                    ddL <span class="text-teal-500">SHOES</span>
+                </a>
+                </div>
+            
+
+            <!-- Botão do Hambúrguer -->
+            <button id="hamburger" class="block md:hidden text-3xl focus:outline-none">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Menu de navegação-->
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+                <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+                <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+                <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+                <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+            </nav>
+
+            <!-- Links à direita -->
+            <div class="flex space-x-4">
+                <a href="login.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Entrar</a>
+                <a href="#" class="text-lg text-gray-500 hover:text-teal-500 transition">
+                    <i class="bi bi-bag"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu mobile-->
+        <nav id="mobileMenu" class=" md:hidden flex flex-col space-y-4 mt-4 px-8 pb-5">
+            <a href="nike.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Nike</a>
+            <a href="puma.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Puma</a>
+            <a href="jordan.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Jordan</a>
+            <a href="new-balance.html" class="text-lg text-gray-500 hover:text-teal-500 transition">New Balance</a>
+            <a href="adidas.html" class="text-lg text-gray-500 hover:text-teal-500 transition">Adidas</a>
+        </nav>
+    </header>
+
+    <main>
+
+    <!-- Primeiro Carrossel -->
+    <section class="relative h-[calc(100vh-96px)]" id="carousel">
+        <div class="carousel-inner flex transition-transform duration-500 ease-in-out w-full h-full relative">
+            
+            <!-- Slide 1: Nike -->
+            <div class="relative min-w-full h-auto">
+                <img class="w-full h-full object-contain" src="../assets/img/nike-3.webp" alt="Nike Shoes">
+                <div class="max-w-[1700px] absolute inset-0 flex flex-col px-5 pt-5 ml-5 mt-3
+                2xl:ml-48 2xl:mt-14 xl:ml-10 xl:mt-5 lg:ml-10 lg:mt-5 md:ml-10 md:mt-5
+                sm:ml-5">
+                    <p class="text-black text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow-lg">
+                        Está em dúvida?
+                    </p>
+                    <p class="text-teal-500 text-3xl md:text-2xl lg:text-4xl font-bold mt-2">
+                        SHOES te ajuda!
+                    </p>
+                    <p class="text-black text-lg md:text-lg font-medium lg:text-xl mt-1">
+                        Confira nossas marcas patrocinadoras e seus modelos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Puma -->
+            <div class="relative min-w-full h-auto">
+                <img class="w-full h-full object-contain" src="../assets/img/puminha.webp" alt="Puma Shoes">
+                <div class="max-w-[1700px] absolute inset-0 flex flex-col px-5 pt-5 ml-5 mt-3
+                2xl:ml-48 2xl:mt-14 xl:ml-10 xl:mt-5 lg:ml-10 lg:mt-5 md:ml-10 md:mt-5
+                sm:ml-5">
+                    <p class="text-black text-4xl md:text-5xl font-bold tracking-wide drop-shadow-lg lg:text-6xl">
+                        Conforto e estilo?
+                    </p>
+                    <p class="text-teal-500 text-3xl md:text-2xl lg:text-4xl font-bold mt-2">
+                        nós temos os dois 
+                    </p>
+                    <p class="text-black text-lg md:text-lg lg:text-xl font-medium mt-1">
+                        Design moderno e qualidade incomparável.
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Jordan -->
+            <div class="relative min-w-full h-auto">
+                <img class="w-full h-full object-contain" src="../assets/img/newjordan.webp" alt="Jordan Shoes">
+                <div class="max-w-[1700px] absolute inset-0 flex flex-col px-5 pt-5 ml-5 mt-3
+                2xl:ml-48 2xl:mt-14 xl:ml-10 xl:mt-5 lg:ml-10 lg:mt-5 md:ml-10 md:mt-5
+                sm:ml-5">
+                    <p class="text-black text-4xl md:text-5xl font-bold tracking-wide drop-shadow-lg lg:text-6xl">
+                        Sinta a diferença!
+                    </p>
+                    <p class="text-teal-500 text-3xl md:text-2xl font-bold mt-2 lg:text-4xl">
+                        Tênis que te inspiram.
+                    </p>
+                    <p class="text-black text-lg md:text-lg font-medium mt-1 lg:text-xl">
+                        Modelos incríveis e modernos, só para você. 
+                    </p>
+                </div>            </div>
+
+            <!-- Slide 4: New Balance -->
+            <div class="relative min-w-full h-auto">
+                <img class="w-full h-full object-contain" src="../assets/img/nw4-jpeg.png" alt="New Balance Shoes">
+                <div class="max-w-[1700px] absolute inset-0 flex flex-col px-5 pt-5 ml-5 mt-3
+                2xl:ml-48 2xl:mt-14 xl:ml-10 xl:mt-5 lg:ml-10 lg:mt-5 md:ml-10 md:mt-5
+                sm:ml-5">
+                    <p class="text-black text-4xl md:text-5xl font-bold tracking-wide drop-shadow-lg lg:text-6xl">
+                        Quer andar com estilo?
+                    </p>
+                    <p class="text-teal-500 text-3xl md:text-2xl lg:text-4xl font-bold mt-2">
+                        SHOES te acompanha!
+                    </p>
+                    <p class="text-black text-lg md:text-lg lg:text-xl font-medium mt-1">
+                        Descubra o conforto e a performance juntos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 5: Adidas -->
+            <div class="relative min-w-full h-auto">
+                <img class="w-full h-full object-contain" src="../assets/img/adidas-2.png" alt="Adidas Shoes">
+                <div class="max-w-[1700px] absolute inset-0 flex flex-col px-5 pt-5 ml-5 mt-3
+                2xl:ml-40 2xl:mt-14 xl:ml-10 xl:mt-5 lg:ml-10 lg:mt-5 md:ml-10 md:mt-5
+                sm:ml-5">
+                    <p class="text-black text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide drop-shadow-lg lg:text-6xl">
+                        Prepare-se para correr!
+                    </p>
+                    <p class="text-teal-500 text-xl sm:text-2xl lg:text-4xl md:text-2xl font-bold mt-2">
+                        Escolha seu par perfeito.
+                    </p>
+                    <p class="text-black text-lg sm:text-xl md:text-lg lg:text-xl font-medium mt-1">
+                        Tênis projetados para o seu desempenho.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de navegação do carrossel -->
+        <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/30 p-3 rounded-full cursor-pointer">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/30 p-3 rounded-full cursor-pointer">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </section>
+
+        <!-- Contêiner do carrossel marcas -->
+    <section id="marcas" class="bg-white py-12 border-t border-opacity-25 border-gray-400 overflow-hidden w-screen">
+        <div class="">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">Coleções por Marca</h2>
+            <p class="text-lg text-gray-600 mb-12 text-center">Escolha sua marca favorita e descubra nossos produtos.</p>
+    
+           
+            <div class="relative overflow-hidden">
+            
+                <div id="carouselMarcas" class="flex items-center gap-6 whitespace-nowrap">
+                
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-nike.png" alt="Nike">
+                        <h3 class="mt-4 text-lg font-semibold">Nike</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-adidas.png" alt="Adidas">
+                        <h3 class="mt-4 text-lg font-semibold">Adidas</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-puma.png" alt="Puma">
+                        <h3 class="mt-4 text-lg font-semibold">Puma</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-jordan.png" alt="Jordan">
+                        <h3 class="mt-4 text-lg font-semibold">Jordan</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-nb.png" alt="New Balance">
+                        <h3 class="mt-4 text-lg font-semibold">New Balance</h3>
+                    </a>
+    
+                    
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-nike.png" alt="Nike">
+                        <h3 class="mt-4 text-lg font-semibold">Nike</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-adidas.png" alt="Adidas">
+                        <h3 class="mt-4 text-lg font-semibold">Adidas</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-puma.png" alt="Puma">
+                        <h3 class="mt-4 text-lg font-semibold">Puma</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-jordan.png" alt="Jordan">
+                        <h3 class="mt-4 text-lg font-semibold">Jordan</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-nb.png" alt="New Balance">
+                        <h3 class="mt-4 text-lg font-semibold">New Balance</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-nike.png" alt="Nike">
+                        <h3 class="mt-4 text-lg font-semibold">Nike</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-adidas.png" alt="Adidas">
+                        <h3 class="mt-4 text-lg font-semibold">Adidas</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-puma.png" alt="Puma">
+                        <h3 class="mt-4 text-lg font-semibold">Puma</h3>
+                    </a>
+                    <a href="#" class="flex-none w-64 border-2 border-gray-300 rounded-lg p-4 hover:bg-gray-200 transition">
+                        <img class="w-full h-32 object-contain" src="../assets/img/marca-jordan.png" alt="Jordan">
+                        <h3 class="mt-4 text-lg font-semibold">Jordan</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- banner-imagens -->
+    <section id="banner-img" class="py-12">
+        <div class="container mx-auto px-5 md:px-10">
+            <img class="rounded-lg w-full h-auto object-cover hidden md:block" src="../assets/img/banner-site.png" alt="Banner Site">
+            <img class="rounded-lg w-full h-auto object-cover block md:hidden" src="../assets/img/banner-2.png" alt="Banner Site">
+        </div>
+    </section>
+    
+
+
+    <!-- Produtos-Destaque -->
+    <section id="Produtos-Destaque" class="bg-white py-12">
+        <div class="container mx-auto px-5 md:px-10 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Produtos em Destaque</h2>
+            <p class="text-lg text-gray-600 mb-12">Os tênis mais vendidos e os lançamentos mais aguardados.</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Produto 1 -->
+                <div class="border rounded-lg shadow-lg p-6 relative flex flex-col items-center">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-sm px-2 py-1 rounded-sm">
+                        -20%
+                    </div>
+                    <div class="w-full h-60 flex items-center justify-center">
+                        <img class="max-h-full object-contain" src="../assets/img/destaque-nike.png" alt="Nike Destaque">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Nike Air Max</h3>
+                    <div class="flex items-center mt-2">
+                        <p class="text-gray-500 line-through mr-2">$199.99</p>
+                        <p class="text-teal-500 font-bold">$159.99</p>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">
+                        Comprar
+                    </a>
+                </div>
+    
+                <!-- Produto 2 -->
+                <div class="border rounded-lg shadow-lg p-6 relative flex flex-col items-center">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-sm px-2 py-1 rounded-sm">
+                        -15%
+                    </div>
+                    <div class="w-full h-60 flex items-center justify-center">
+                        <img class="max-h-full" src="../assets/img/destaque-adidas.png" alt="Adidas Destaque">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Adidas Ultraboost</h3>
+                    <div class="flex items-center mt-2">
+                        <p class="text-gray-500 line-through mr-2">$229.99</p>
+                        <p class="text-teal-500 font-bold">$195.49</p>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">
+                        Comprar
+                    </a>
+                </div>
+    
+                <!-- Produto 3 -->
+                <div class="border rounded-lg shadow-lg p-6 relative flex flex-col items-center">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-sm px-2 py-1 rounded-sm">
+                        -10%
+                    </div>
+                    <div class="w-full h-60 flex items-center justify-center">
+                        <img class="max-h-full object-contain" src="../assets/img/destaque-puma.png" alt="Puma Destaque">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">Puma RS-X</h3>
+                    <div class="flex items-center mt-2">
+                        <p class="text-gray-500 line-through mr-2">$189.99</p>
+                        <p class="text-teal-500 font-bold">$170.99</p>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">
+                        Comprar
+                    </a>
+                </div>
+    
+                <!-- Produto 4 -->
+                <div class="border rounded-lg shadow-lg p-6 relative flex flex-col items-center">
+
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-sm px-2 py-1 rounded-sm">
+                        -30%
+                    </div>
+                    <div class="w-full h-60 flex items-center justify-center">
+                        <img class="max-h-full object-contain" src="../assets/img/destaque-nb.png" alt="New Balance Destaque">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mt-4">New Balance 574</h3>
+                    <div class="flex items-center mt-2">
+                        <p class="text-gray-500 line-through mr-2">$159.99</p>
+                        <p class="text-teal-500 font-bold">$111.99</p>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">
+                        Comprar
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="Tenis-Destaque" class="w-full border-t border-b border-opacity-25 border-gray-400">
+        <img src="../assets/img/banner-tenis.png" alt="Banner de Tênis" class="w-full h-auto object-contain hidden md:block">
+        <img src="../assets/img/banner-tenis-2.jpg" alt="Banner de Tênis" class="w-full h-auto object-contain md:hidden ">
+    </section>
+    
+    <!-- lançamentos -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-5 md:px-10 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Lançamentos com Desconto</h2>
+            <p class="text-lg text-gray-600 mb-12">Aproveite as ofertas em tênis profissionais e garanta seu par agora mesmo!</p>
+    
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Lançamento 1 - com desconto -->
+                <div class="relative bg-white rounded-lg shadow-lg p-6 transition hover:shadow-xl">
+                    <div class="absolute top-0 left-0 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded-br-lg">
+                        20% OFF
+                    </div>
+                    <img class="w-full h-60 object-contain mb-4" src="../assets/img/lançamento-nike.png" alt="Nike Air Max Alpha">
+                    <h3 class="text-xl font-semibold text-gray-700">Tênis Nike Air Max Alpha</h3>
+                    <div class="flex justify-center items-center space-x-2">
+                        <span class="text-gray-500 line-through">$249.99</span>
+                        <span class="text-teal-500 font-bold">$199.99</span>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">Comprar</a>
+                </div>
+    
+                <!-- Lançamento 2 - sem desconto -->
+                <div class="relative bg-white rounded-lg shadow-lg p-6 transition hover:shadow-xl">
+                    <img class="w-full h-60 object-contain mb-4" src="../assets/img/lançamento-adidas.webp" alt="Adidas NMD R1">
+                    <h3 class="text-xl font-semibold text-gray-700">Adidas NMD R1</h3>
+                    <p class="text-teal-500 font-bold">$229.99</p>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">Comprar</a>
+                </div>
+    
+                <!-- Lançamento 3 - com desconto -->
+                <div class="relative bg-white rounded-lg shadow-lg p-6 transition hover:shadow-xl">
+                    
+                    <div class="absolute top-0 left-0 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded-br-lg">
+                        30% OFF
+                    </div>
+                    <img class="w-full h-60 object-contain mb-4" src="../assets/img/lançamento-puma.png" alt="Puma RS-X Reinvention">
+                    <h3 class="text-xl font-semibold text-gray-700">Puma RS-X Reinvention</h3>
+                    <div class="flex justify-center items-center space-x-2">
+                        <span class="text-gray-500 line-through">$199.99</span>
+                        <span class="text-teal-500 font-bold">$139.99</span>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">Comprar</a>
+                </div>
+    
+                <!-- Lançamento 4 - com desconto -->
+                <div class="relative bg-white rounded-lg shadow-lg p-6 transition hover:shadow-xl">
+                    
+                    <div class="absolute top-0 left-0 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded-br-lg">
+                        15% OFF
+                    </div>
+                    <img class="w-full h-60 object-contain mb-4" src="../assets/img/lançamento-jordan.png" alt="Jordan 1 Retro High">
+                    <h3 class="text-xl font-semibold text-gray-700">Jordan 1 Retro High</h3>
+                    <div class="flex justify-center items-center space-x-2">
+                        <span class="text-gray-500 line-through">$279.99</span>
+                        <span class="text-teal-500 font-bold">$239.99</span>
+                    </div>
+                    <a href="#" class="bg-teal-500 text-white px-4 py-2 mt-4 inline-block rounded-full hover:bg-teal-600 transition">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Avaliacoes" class="bg-white py-12 relative overflow-hidden">
+        <!-- Efeito de fundo decorativo -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute transform -rotate-45 bg-gradient-to-r from-teal-400 to-teal-600 h-96 w-96 -top-20 -left-20 rounded-full"></div>
+            <div class="absolute transform rotate-45 bg-gradient-to-r from-teal-500 to-teal-700 h-96 w-96 -bottom-20 -right-20 rounded-full"></div>
+        </div>
+    
+        <div class="container mx-auto px-5 md:px-10 relative">
+            <!-- Cabeçalho da seção -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+                    O que nossos clientes estão dizendo
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Experiências reais de clientes que confiam em nossa loja
+                </p>
+            </div>
+    
+            <!-- Estatísticas -->
+            <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto mb-16">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-teal-500">10k+</div>
+                    <div class="text-sm text-gray-600">Clientes Felizes</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-teal-500">24h</div>
+                    <div class="text-sm text-gray-600">Entrega Expressa</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-teal-500">4.9/5</div>
+                    <div class="text-sm text-gray-600">Avaliação Média</div>
+                </div>
+            </div>
+    
+            <!-- Grid de Depoimentos -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-1 text-teal-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"A melhor loja de tênis que já conheci! Produtos incríveis, entrega super rápida e atendimento excepcional. O tênis chegou em perfeito estado e o conforto é extraordinário."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-teal-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                            JS
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-gray-900">João Silva</h3>
+                            <p class="text-sm text-gray-500">Nike Air Max 270</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-1 text-teal-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Os tênis da coleção Nike são fantásticos! O atendimento ao cliente foi excepcional e me ajudaram a escolher o tamanho perfeito. Super satisfeita com a compra!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-teal-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                            MS
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-gray-900">Maria Souza</h3>
+                            <p class="text-sm text-gray-500">Nike Air Force 1</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-1 text-teal-500 mb-4">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Eu amo os tênis da Adidas, e o atendimento da loja é excelente. A experiência de compra foi incrível do início ao fim, entrega super rápida. Recomendo muito a todos!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-teal-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                            CP
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-gray-900">Carlos Pereira</h3>
+                            <p class="text-sm text-gray-500">Adidas Ultraboost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+      
+        
+      </div>
+    </section>
+
+    <!-- Dicas-tendencias -->
+
+    <section id="Dicas-Tendencias" class="bg-white py-12">
+        <div class="container px-5 md:px-10 mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Dicas e Tendências</h2>
+            <p class="text-lg text-gray-600 mb-12">Fique por dentro das últimas novidades sobre tênis e estilo.</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="../assets/img/tenis-corrida.jpg" alt="Dicas de Corrida" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold">Como escolher o tênis ideal para corridas</h3>
+                        <p class="text-gray-500 mt-2">Escolher o tênis certo pode melhorar seu desempenho. Veja nossas dicas.</p>
+                    </div>
+                </div>
+    
+                <!-- Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="../assets/img/tenis-look.jpg" alt="Estilo Casual" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold">Tênis no estilo casual: Como combinar?</h3>
+                        <p class="text-gray-500 mt-2">Saiba como incorporar tênis no seu look casual do dia a dia.</p>
+                    </div>
+                </div>
+    
+                <!-- Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="../assets/img/tenis-pesado.webp" alt="Treinos" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold">Os melhores tênis para treinos pesados</h3>
+                        <p class="text-gray-500 mt-2">Conheça os tênis mais indicados para quem pratica treinos de alta intensidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 py-5">
+                <a  class="py-4 px-8 bg-teal-500 rounded-lg text-white text-lg hover:text-white hover:bg-gray-700 transition duration-500" href="cadastro.html">Cadastre-se na SHOES</a>
+            </div>
+        </div>
+    </section>
+
+  
+    
+
+     <!-- Novidades -->
+    <section id="Novidades" class="bg-gray-800 py-12 text-white">
+        <div class="container mx-auto px-5 md:px-10 text-center">
+            <h2 class="text-4xl font-bold mb-6">Receba nossas Novidades</h2>
+            <p class="text-lg mb-8">Fique por dentro dos novos lançamentos e promoções exclusivas.</p>
+            <form class="flex justify-center">
+                <input type="email" placeholder="Digite seu e-mail" class="w-1/2 p-2 rounded-l-lg focus:outline-none text-black">
+                <button type="submit" class="bg-teal-500 p-2 rounded-r-lg hover:bg-teal-600">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+            
+    </main>
+
+    <!-- Rodapé -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Coluna 1: Sobre Nós -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Sobre a ddL SHOES</h3>
+            <p class="text-gray-400">
+                A ddL SHOES é a sua loja online especializada em tênis. Oferecemos uma variedade de modelos das marcas mais renomadas, garantindo qualidade, estilo e conforto.
+            </p>
+        </div>
+
+            <!-- Coluna 2: Links Úteis -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Links Úteis</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-teal-500 transition">Quem Somos</a></li>
+                <li><a href="#" class="hover:text-teal-500 transition">Política de Privacidade</a></li>
+                <li><a href="#" class="hover:text-teal-500 transition">Termos de Serviço</a></li>
+                <li><a href="#" class="hover:text-teal-500 transition">Ajuda</a></li>
+            </ul>
+        </div>
+
+            <!-- Coluna 3: Contato -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Contato</h3>
+            <ul class="space-y-2">
+                <li class="flex items-center">
+                    <i class="bi bi-geo-alt-fill text-teal-500 mr-2"></i>
+                    Rua Exemplo, 123, São Paulo, SP
+                </li>
+                <li class="flex items-center">
+                    <i class="bi bi-envelope-fill text-teal-500 mr-2"></i>
+                    contato@ddlshoes.com
+                </li>
+                <li class="flex items-center">
+                    <i class="bi bi-telephone-fill text-teal-500 mr-2"></i>
+                    +55 (11) 1234-5678
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+            <!-- Redes Sociais -->
+    <div class="mt-8 border-t border-gray-700 pt-8">
+        <div class="container mx-auto px-5 md:px-10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+
+           
+            <div class="flex space-x-4 justify-center md:justify-start">
+                <a href="#" class="text-white hover:text-teal-500 transition">
+                    <i class="bi bi-facebook text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal-500 transition">
+                    <i class="bi bi-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal-500 transition">
+                    <i class="bi bi-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal-500 transition">
+                    <i class="bi bi-whatsapp text-2xl"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-sm text-center md:text-right">
+                &copy; 2024 ddL SHOES. Todos os direitos reservados.
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>
